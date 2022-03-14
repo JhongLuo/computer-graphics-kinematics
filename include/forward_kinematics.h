@@ -12,6 +12,6 @@
 // Outputs:
 //   T  #T list of affine transformations
 void forward_kinematics(
-  const Skeleton & skeleton,
-  std::vector<Eigen::Affine3d,Eigen::aligned_allocator<Eigen::Affine3d> > & T);
+	const Skeleton& skeleton,
+	std::vector<Eigen::Affine3d, Eigen::aligned_allocator<Eigen::Affine3d> >& T);
 #endif
