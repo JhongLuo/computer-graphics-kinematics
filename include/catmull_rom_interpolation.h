@@ -13,6 +13,6 @@
 //   t  query time
 // Returns inteprolated value at time t
 Eigen::Vector3d catmull_rom_interpolation(
-  const std::vector<std::pair<double, Eigen::Vector3d> > & keyframes,
-  double t);
+	const std::vector<std::pair<double, Eigen::Vector3d> >& keyframes,
+	double t);
 #endif

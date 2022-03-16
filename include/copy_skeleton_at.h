@@ -8,5 +8,5 @@
 //   skeleton  input skeleton
 //   A  #bones*3 list of Euler angles
 // Returns a skeleton copy
-Skeleton copy_skeleton_at(const Skeleton & skeleton, const Eigen::VectorXd & A);
+Skeleton copy_skeleton_at(const Skeleton& skeleton, const Eigen::VectorXd& A);
 #endif

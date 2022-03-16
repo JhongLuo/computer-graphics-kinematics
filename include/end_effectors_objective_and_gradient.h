@@ -23,10 +23,10 @@
 //     input skeleton's joint angles
 //   
 void end_effectors_objective_and_gradient(
-  const Skeleton & skeleton,
-  const Eigen::VectorXi & b,
-  const Eigen::VectorXd & xb0,
-  std::function<double(const Eigen::VectorXd &)> & f,
-  std::function<Eigen::VectorXd(const Eigen::VectorXd &)> & grad_f,
-  std::function<void(Eigen::VectorXd &)> & proj_z);
+	const Skeleton& skeleton,
+	const Eigen::VectorXi& b,
+	const Eigen::VectorXd& xb0,
+	std::function<double(const Eigen::VectorXd&)>& f,
+	std::function<Eigen::VectorXd(const Eigen::VectorXd&)>& grad_f,
+	std::function<void(Eigen::VectorXd&)>& proj_z);
 #endif
