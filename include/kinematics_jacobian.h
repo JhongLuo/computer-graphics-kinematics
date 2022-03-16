@@ -12,7 +12,7 @@
 //     J(i*3+c,j*3+a) = ∂xi,c/∂θj,a where xi,c is the cth component of the ith
 //     endpoint position in b and θj,a is the ath Euler angle in the jth bone.
 void kinematics_jacobian(
-  const Skeleton & skeleton,
-  const Eigen::VectorXi & b,
-  Eigen::MatrixXd & J);
+	const Skeleton& skeleton,
+	const Eigen::VectorXi& b,
+	Eigen::MatrixXd& J);
 #endif

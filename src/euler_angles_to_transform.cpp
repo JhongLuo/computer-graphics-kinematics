@@ -20,12 +20,12 @@ Eigen::Affine3d euler_angles_to_transform(
 		0, sin(anglex1), cos(anglex1), 0,
 		0, 0, 0, 1;
 
-	transformx1.matrix() << cos(anglez), -sin(anglez), 0, 0,
+	transformz.matrix() << cos(anglez), -sin(anglez), 0, 0,
 		sin(anglez), cos(anglez), 0, 0,
 		0, 0, 1, 0,
 		0, 0, 0, 1;
 
-	transformx1.matrix() << 1, 0, 0, 0,
+	transforx2.matrix() << 1, 0, 0, 0,
 		0, cos(anglex2), -sin(anglex2), 0,
 		0, sin(anglex2), cos(anglex2), 0,
 		0, 0, 0, 1;

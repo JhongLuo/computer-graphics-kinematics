@@ -23,37 +23,37 @@ Eigen::Vector3d catmull_rom_interpolation(
 			pos++;
 		}
 
-		Eigen::Vector3d P0, P1, P2, P3;
+
 		double t0, t1, t2, t3;
-
+		Eigen::Vector3d P0, P1, P2, P3;
 		if (pos > 1) {
-			P0 = keyframes[pos - 2].second;
 			t0 = keyframes[pos - 2].first;
+			P0 = keyframes[pos - 2].second;
 
-			P1 = keyframes[pos - 1].second;
 			t1 = keyframes[pos - 1].first;
+			P1 = keyframes[pos - 1].second;
 		}
 		else {
-			P0 = keyframes[0].second;
 			t0 = keyframes[0].first;
+			P0 = keyframes[0].second;
 
-			P1 = keyframes[0].second;
 			t1 = keyframes[0].first;
+			P1 = keyframes[0].second;
 		}
 
 		if (pos < keyframes.size() - 1) {
-			P2 = keyframes[pos].second;
 			t2 = keyframes[pos].first;
+			P2 = keyframes[pos].second;
 
-			P3 = keyframes[pos + 1].second;
 			t3 = keyframes[pos + 1].first;
+			P3 = keyframes[pos + 1].second;
 		}
 		else {
-			P2 = keyframes[keyframes.size() - 1].second;
 			t2 = keyframes[keyframes.size() - 1].first;
+			P2 = keyframes[keyframes.size() - 1].second;
 
-			P3 = keyframes[keyframes.size() - 1].second;
 			t3 = keyframes[keyframes.size() - 1].first;
+			P3 = keyframes[keyframes.size() - 1].second;
 		}
 
 		if (t2 - t1 == 0) {

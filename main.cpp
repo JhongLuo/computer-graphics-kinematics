@@ -34,11 +34,11 @@ int main(int argc, char* argv[])
 
 	// list of indices into skeleton of bones whose tips are constrained during IK
 	Eigen::VectorXi b;
-	std::vector<std::vector<std::pair<double, Eigen::Vector3d> > > fk_anim;
+	std::vector<std::vector<std::pair<double, Eigen::Vector3d> > > fk_anim; 
 
 	// read mesh, skeleton and weights
 	read_model_and_rig_from_json(
-		argc > 1 ? argv[1] : "../data/robot-arm.json",
+		argc > 1 ? argv[1] : "../../data/robot-arm.json",
 		V, F, skeleton, W,
 		fk_anim, b);
 	// If not provided use last bone;

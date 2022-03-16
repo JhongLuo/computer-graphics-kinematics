@@ -16,7 +16,6 @@ Eigen::VectorXd transformed_tips(
 		ans[i * 3 + 1] = tmp_affine.y() / tmp_affine.w();
 		ans[i * 3 + 2] = tmp_affine.z() / tmp_affine.w();
 	}
-
 	return ans;
 	/////////////////////////////////////////////////////////////////////////////
 }
